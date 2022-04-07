@@ -5,6 +5,7 @@ export default () => null;
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   const session = getSession(req, res);
+
   if (!session) {
     return {
       redirect: {
